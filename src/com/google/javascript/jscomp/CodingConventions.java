@@ -343,7 +343,7 @@ public final class CodingConventions {
     public boolean isOptionalParameter(Node parameter) {
       // be as lax as possible, but this must be mutually exclusive from
       // var_args parameters.
-        System.out.printf("DefaultCodingConvention isOptionalParameter %s\n", parameter);
+        System.err.printf("DefaultCodingConvention isOptionalParameter %s\n", parameter);
       return parameter.isOptionalArg();
     }
 
